@@ -13,10 +13,19 @@ body {
   font-size: 1.6rem;
   background-color: #faf9f6;
   color: #112c4a;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 main {
   width: 80%;
+  margin: auto;
+  padding-bottom: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 a {
@@ -27,55 +36,88 @@ a {
 h1 {
   font-family: "Manrope", sans-serif;
   font-size: 3rem;
+  margin: 3rem 0;
   line-height: 1;
   letter-spacing: -0.05em;
   font-weight: 800;
-  color: #333f51;
+}
+
+h2 {
+  font-family: "Manrope", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+h4{
+  font-family: "Manrope", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  letter-spacing: -0.05em;
+ font-weight: 700;
 }
 
 /* Estilos para el header */
 
+header{
+  background: #0f172a;
+  color: #ffffff;
+  width: 100%;
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .div-logo {
   display: flex;
-  justify-content: left;
+  margin-left: 2rem;
+  font-weight: bold;
+  font-size: 2.1rem;
+
+}
+
+.div-logo a{
+  display: flex;
   align-items: center;
-  background-color: #e5e7eb;
+  text-decoration: none; 
+  letter-spacing: -0.05em;
+  color: #FFFFFF;
+  font-family: "manrope",sans-serif;
+  font-weight: 800;
+  font-size: 50px;
 }
 
 .logo {
-  width: 100px;
-  height: 100px;
+  width: 85px;
+  height: auto;
+  object-fit: contain;
   margin: 1rem;
 }
 
-.logo-text {
-  font-family: "Manrope", sans-serif;
-  font-weight: 900;
-  font-size: 3.5rem;
-  letter-spacing: -0.05em;
-  color: #0f172a;
-}
-
-.header-nav {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  display: flex;
-  margin: 20px;
-  padding: 2;
-}
-
-.header-nav ul {
-  display: flex;
+.header-nav ul{
   list-style: none;
-  gap: 25px;
+  display: flex;
+  gap: 2rem;
+}
+
+.header-nav ul li a {
+  text-decoration: none;
+  font-size: 2.1rem;
+  color: inherit;
+  display: inline-block;
+  padding: 2rem;
+}
+
+.header-nav ul li a {
+  color: #ffffff;
 }
 
 .header-nav ul :hover {
   color: #b91c1c;
-}
-
-.header-nav ul a {
-  color: #0f172a;
 }
 
 /* Estilos para el footer*/
@@ -90,14 +132,19 @@ footer {
 .info-footer {
   padding: 1rem 0;
   display: flex;
-  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  gap: 2rem;
   cursor: pointer;
+  
 }
 
 .info-footer ul li a i {
   margin-right: 10px;
   width: 20px;
   font-size: 25px;
+  list-style: none;
+
 }
 
 .info-footer ul li a:hover {
@@ -106,73 +153,99 @@ footer {
 
 /* Estilos para el botón */
 .btn {
-  padding: 0.5rem 1rem;
-  background-color: #b91c1c;
-  color: #ffffff;
-  border-radius: 4px;
   border: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1.6rem;
+  border-radius: 1rem;
+  background-color: #002234;
+  color: #ffffff;
   cursor: pointer;
-  padding: 0.5rem 1rem;
-  font-weight: 700;
 }
+
 
 .btn:hover {
   background-color: #a02020;
 }
 
-/*productos*/
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   COLORES                                  */
+/* -------------------------------------------------------------------------- */
+.bg-primary {
+  background-color: #faf9f6;
+}
+
+.bg-secondary {
+  background-color: #0f172a;
+}
+
+.text-light {
+  color: #ffffff;
+}
+
+.text-dark {
+  color: #112c4a;
+}
+
+.text-secondary {
+  color: #64748b;
+}
+
+.text-tercery {
+  color: #b91c1c;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  HOME                                      */
+/* -------------------------------------------------------------------------- */
+.parrafo {
+  width: 80%;
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  PRODUCTOS                                 */
+/* -------------------------------------------------------------------------- */
 .contenedor {
+ margin-top: 2rem;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .card {
   background-color: #ffffff;
   color: #002234;
-  border-radius: 8px;
+  border-radius: 1rem;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 1rem;
-  width: 300px;
-  height: 450px;
-  font-weight: 700;
-}
+  gap: 1rem;
+  padding-bottom: 2rem;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 
-.card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
   width: 100%;
+  height: 300px;
+ 
   object-fit: cover;
-  border-radius: 10px 10px 0 0;
-  transition: all 0.2s;
-  margin: 0 auto;
-  display: block;
 }
+
 
 .card:hover img {
   transform: scale(1.1);
 }
 
-.card button {
-  border-radius: 6px;
-  gap: 8px;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  display: flex;
-  background-color: #002234;
-  color: #ffffff;
-  padding: 15px 10px;
-  cursor: pointer;
-}
 
-.card button :hover {
-  background-color: #480009;
-}
 
 .info-card {
   padding: 15px;
@@ -185,14 +258,15 @@ footer {
   color: #64748b;
 }
 
-/*-----------*/
-/*  Reseñas  */
-/*----------*/
+/* -------------------------------------------------------------------------- */
+/*                                  RESEÑAS                                   */
+/* -------------------------------------------------------------------------- */
 
 .grid-container {
   display: grid;
-  grid-template-columns: 200px 1fr;
-  grid-template-rows: auto 1fr auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  padding: 20px;
   gap: 10px;
 }
 
@@ -201,22 +275,70 @@ footer {
   border-radius: 20px;
 }
 
-.grid-box-roja {
-  background-color: #a02020;
+.grid-box-blanca {
+  background-color: #ffffff;
   border-radius: 8px;
-  box-shadow: 5px 5px 10px 2px rgba(72, 0, 9, 0.3);
-  color: white;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  color: #002234;
 }
 
 .grid-box-azul {
   background-color: #002234;
   border-radius: 8px;
-  box-shadow: 5px 5px 10px 2px rgba(0, 34, 52, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   color: white;
 }
 
 .grid-box-gris {
-  background-color: #717377;
+  background-color: #ebeef3;
   border-radius: 8px;
-  box-shadow: 5px 5px 10px 2px rgba(113, 115, 119, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.col-span-2 {
+  grid-column: span 2;
+}
+
+.col-span-4{
+  grid-column: span 4;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  CONTACTO                                  */
+/* -------------------------------------------------------------------------- */
+
+.form-contacto{
+  background-color: #0f172a;
+  color: #ffffff;
+  width: 100%;
+  max-width: 50rem;
+  font-size: 2rem;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.btn-contacto{
+  border: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1.6rem;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  color: #0f172a;
+  cursor: pointer;
+
+}
+
+.btn-contacto:hover{
+  background-color: #F1F4F9;
+}
+/* -------------------------------------------------------------------------- */
+/*                                MEDIA QUERIES                               */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 600px) {
+  header,
+  footer {
+    flex-direction: column;
+  }
 }
