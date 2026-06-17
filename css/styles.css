@@ -19,6 +19,7 @@ body {
 }
 
 main {
+  width: 80%;
   margin: auto;
   padding-bottom: 2rem;
   flex: 1;
@@ -165,6 +166,24 @@ footer {
   background-color: #a02020;
 }
 
+.btn-eliminar-carrito {
+  background-color: #b91c1c;
+  border: 2px solid  #ffffff;
+}
+
+.btn-vaciar-carrito {
+  background-color: transparent;
+  color: #b91c1c;              
+  border: 2px solid #b91c1c;
+  transition: all 0.3s ease;
+  margin-top: 3rem;
+}
+
+.btn-vaciar-carrito:hover {
+  background-color: #b91c1c;  
+  color: #ffffff;            
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                   COLORES                                  */
 /* -------------------------------------------------------------------------- */
@@ -220,6 +239,15 @@ footer {
   gap: 2rem;
 }
 
+.contenedor-carrito {
+  flex: 1;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+
 .card {
   background-color: #ffffff;
   color: #002234;
@@ -239,7 +267,6 @@ footer {
 .card img {
   width: 100%;
   height: 300px;
-
   object-fit: cover;
 }
 

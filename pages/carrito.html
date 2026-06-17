@@ -1,6 +1,6 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+ <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,10 +14,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="stylesheet" href="../css/styles.css" />
-    <title>Contacto</title>
+    <title>Carrito de Compras</title>
      <link rel="icon" href="../img/logo_claro2.png" type="image/png">
   </head>
-  <body>
+<body>
     <header>
       <div class="div-logo">
         <a href="../index.html"
@@ -51,28 +51,15 @@
       </nav>
     </header>
     <main>
-      <h1 class="titulos">Contactanos</h1>
+      <h1 class="titulos">Carrito de Compras</h1>
+      <section id="contenedor-carrito" class="contenedor-carrito">
+      </section>
 
-      <form
-        class="form-contacto"
-        action="https://formspree.io/f/mqewrerg"
-        method="POST"
-      >
-        <div>
-          <label>
-            Tu email:
-            <input type="email" name="email" />
-          </label>
-        </div>
-        <div>
-          <label>
-            Tu mensaje:
-            <textarea name="message"></textarea>
-          </label>
-        </div>
-        <!-- your other form fields go here -->
-        <button class="btn-contacto" type="submit">Enviar</button>
-      </form>
+      <div id="acciones-carrito" class="acciones-carrito">
+      </div>
+
+      <section id="resumen-carrito">
+      </section>
     </main>
 
     <footer>
@@ -91,6 +78,7 @@
         </ul>
       </div>
     </footer>
-      <script type="module" src="../js/contacto.js"></script>
-  </body>
+    
+    <script type="module" src="../js/carrito.js"></script>
+</body>
 </html>

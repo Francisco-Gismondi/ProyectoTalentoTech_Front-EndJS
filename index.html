@@ -14,7 +14,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>PenPen</title>
+    <link rel="icon" href="./img/logo_claro2.png" type="image/png">
+    <title>PEN²</title>
   </head>
   <body>
     <header>
@@ -33,6 +34,11 @@
           <li>
             <a href="./pages/contacto.html">Contacto</a>
           </li>
+          <li>
+            <a href="./pages/carrito.html" class="carrito-icono">
+              <i class="fa-solid fa-cart-shopping"></i> <span id="contador-carrito">0</span>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -47,35 +53,8 @@
       </p>
       </div>
       <h2>Productos Destacados</h2>
-      <div class="contenedor">
-        <article class="card">
-          <img src="./img/iphone17.jpg" />
-          <div class="info-card">
-            <h3>Apple iPhone 17 Pro Max</h3>
-            <p class="descripcion">256GB 6.7 Pulgadas</p>
-            <h3>$4.999.900</h3>
-            <button class="btn">Agregar al carrito</button>
-          </div>
-        </article>
-        <article class="card">
-          <img src="./img/moto.jpg" />
-          <div class="info-card">
-            <h3>Celular Motorola Signature</h3>
-            <p class="descripcion">16GB 1TB</p>
-            <h3>$2.499.999</h3>
-            <button class="btn">Agregar al carrito</button>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="./img/s26Ultra.jpg" />
-          <div class="info-card">
-            <h3>Celular Samsung S26 Ultra</h3>
-            <p class="descripcion">12 GB 512GB Negro</p>
-            <h3>$3.699.999</h3>
-            <button class="btn">Agregar al carrito</button>
-          </div>
-        </article>
+        <div id="contenedor-tarjetas" class="contenedor">
+        </div>
     </main>
     <footer>
       <h3>Seguinos en</h3>
@@ -93,5 +72,6 @@
         </ul>
       </div>
     </footer>
+    <script type="module" src="../js/index.js"></script>
   </body>
 </html>
