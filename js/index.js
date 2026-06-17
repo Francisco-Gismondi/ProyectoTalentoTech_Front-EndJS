@@ -5,7 +5,7 @@ import { actualizarContador } from "./ui.js";
 const renderizarDestacados = () =>{
     const contenedor = document.getElementById("contenedor-tarjetas");
 
-    fetch("../data/productos.json")
+    fetch("./data/productos.json")
     .then(response => response.json())
     .then((data) =>{
 
@@ -17,7 +17,7 @@ const renderizarDestacados = () =>{
             tarjeta.classList.add("card");
     
             const img = document.createElement("img");
-            img.src = `../${producto.img}`;
+            img.src = `./${producto.img}`;
             img.alt = producto.nombre;
     
             const titulo = document.createElement("h3");
