@@ -4,55 +4,55 @@
         "nombre": "Apple iPhone 17 Pro Max",
         "descripcion" : "256GB 6.7 Pulgadas",
         "precio": 4999900,
-        "img": "../img/iphone17.jpg"
+        "img": "img/iphone17.jpg"
     },
     {
         "id": 2,
         "nombre": "Celular Samsung S26 Ultra",
         "descripcion" : "12 GB 512GB Negro",
         "precio": 3699999,
-        "img": "../img/s26Ultra.jpg"
+        "img": "img/s26Ultra.jpg"
     },
     {
         "id": 3,
         "nombre": "Google Pixel 9 Pro Xl",
         "descripcion" : " 256gb 16gb Ram",
         "precio": 3697159,
-        "img": "../img/pixel.jpg"
+        "img": "img/pixel.jpg"
     },
     {
         "id": 4,
         "nombre": "Motorola Signature",
         "descripcion" : "16GB 1TB",
         "precio": 2499999,
-        "img": "../img/moto.jpg"
+        "img": "img/moto.jpg"
     },
     {
         "id": 5,
         "nombre": "Motorola Edge 70 Fusion",
         "descripcion" : "FIFA Edition 8GB 256GB",
         "precio": 999999,
-        "img": "../img/edge70.jpg"
+        "img": "img/edge70.jpg"
     },
     {
         "id": 6,
         "nombre": "Xiaomi Redmi Note 14 Pro",
         "descripcion" : "256GB Midnight Black",
         "precio": 699999,
-        "img": "../img/redmiNote14.jpg"
+        "img": "img/redmiNote14.jpg"
     },
     {
         "id": 7,
         "nombre": "Samsung Galaxy Young 2",
         "descripcion" : "4gb Android Liberado Outlet",
         "precio": 111084.72,
-        "img": "../img/samsungyoung2.jpg"
+        "img": "img/samsungyoung2.jpg"
     },
     {
         "id": 8,
         "nombre": "Celular Sky F4C",
         "descripcion" : "1.7\" 128 Mb Dual Sim Red 4G",
         "precio": 69998,
-        "img": "../img/celularSky.jpg"
+        "img": "img/celularSky.jpg"
     }
 ]
